@@ -1319,7 +1319,7 @@ i {
 }
 
 .project .projectgrids .card:hover .imgfuture img {
-    transform: scale(1.5) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
     filter: contrast(200%);
     filter: grayscale(0%);
     transition: var(--quad);
@@ -1400,4 +1400,34 @@ i {
     background: var(--dark-color);
     color: var(--bold-color);
     transition: var(--sine);
+}
+
+/* ===================================== */
+
+/* Testimonials Section */
+
+.testimomial {
+    padding-block: 100px;
+    background-color: var(--bold-color);
+}
+
+.testimomial .testitle .testhead h4 {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--dark-gray-color);
+    left: 9%;
+    margin-bottom: 10px;
+}
+
+.testimomial .testitle .testhead2 h4::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: -5%;
+    background: var(--primary-color);
+    height: 2px;
+    width: 30px;
 }
