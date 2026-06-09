@@ -29,6 +29,8 @@
     --transition: all 0.3s;
     --glide: all 1925ms linear(0, 0.013 1%, 0.051 2.2%, 0.404 9.8%, 0.51 12.6%, 0.602 15.5%, 0.683 18.7%, 0.754 22.2%, 0.813 26%, 0.861 30.2%, 0.9 34.8%, 0.931 40%, 0.972 52.7%, 0.992 70.2%, 1);
     --lazy: all 2650ms linear(0, 0.009 1.4%, 0.032 2.8%, 0.131 6%, 0.265 9.1%, 0.675 17.6%, 0.88 22.8%, 0.953 25.2%, 1.014 27.7%, 1.062 30.3%, 1.094 32.9%, 1.121 37.2%, 1.121 42.2%, 1.102 46.7%, 1.019 61.2%, 0.989 71.5%, 0.985 81.1%, 1);
+    --sine: all 0.3s cubic-bezier(0.36, 0, 0.64, 1);
+    --quad: all 0.5s cubic-bezier(0.44, 0, 0.56, 1);
 }
 
 *,
@@ -1040,6 +1042,8 @@ i {
     font-size: 16px;
 }
 
+/* ===================================== */
+
 /* Program Section */
 
 .myprogram {
@@ -1171,4 +1175,229 @@ i {
 .myprogram .row .programcol .group h1 {
     font-size: 26px;
     font-weight: 700;
+}
+
+/* ===================================== */
+
+/* Project Section */
+
+.project {
+    padding-block: 100px;
+}
+
+.project .projectitle i {
+    line-height: 0;
+}
+
+.project .projectitle {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.project .projectitle .projhead h4 {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--dark-gray-color);
+    left: 9%;
+    margin-bottom: 10px;
+}
+
+.project .projectitle .projhead h4::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: -5%;
+    background: var(--primary-color);
+    height: 2px;
+    width: 30px;
+}
+
+.project .projectitle .projhead2 h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project .projectitle .projhead2 h2 span {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.project .projectitle .projhead2 h2 i {
+    font-size: 1rem;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.project .projectitle .projectbtn button a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 16px;
+    background: var(--black2-color);
+    padding: 5px;
+    border-radius: 50px;
+    color: var(--bold-color);
+}
+
+.project .projectitle .projectbtn button a p {
+    background: var(--secondary-color);
+    border-radius: 50px;
+    padding: 15px;
+    font-weight: 700;
+    transition: var(--sine);
+}
+
+.project .projectitle .projectbtn button:hover a p {
+    background: var(--action2-color);
+    color: var(--black-color);
+    transition: var(--sine);
+}
+
+.project .projectitle .projectbtn button a .icon {
+    padding: 15px;
+    color: var(--dark-color);
+    border-radius: 50px;
+    font-size: 18px;
+    background: var(--bold-color);
+    transition: var(--sine);
+}
+
+.project .projectitle .projectbtn button:hover a .icon {
+    color: var(--action1-color);
+    transition: var(--sine);
+}
+
+.project .projectitle .projectbtn button a .icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.project .projectgrids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.project .projectgrids .card {
+    background: var(--tangy-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.project .projectgrids .card .imgfuture {
+    position: relative;
+    max-width: 808px;
+    max-height: 632px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: var(--quad);
+}
+
+.project .projectgrids .card .imgfuture img {
+    width: 100%;
+    height: 100%;
+    filter: contrast(0%);
+    filter: grayscale(100%);
+    transition: var(--quad);
+}
+
+.project .projectgrids .card:hover .imgfuture img {
+    transform: scale(1.5) rotate(10deg);
+    filter: contrast(200%);
+    filter: grayscale(0%);
+    transition: var(--quad);
+}
+
+.project .projectgrids .card .imgfuture button i {
+    line-height: 0;
+    color: var(--dark-blue-color);
+    transform: rotate(45deg);
+    transition: var(--sine);
+}
+
+.project .projectgrids .card .imgfuture button {
+    position: absolute;
+    z-index: 11;
+    bottom: 0;
+    left: 0 ;
+    font-size: 28px;
+    background: var(--tangy-color);
+    border-radius: 0px 20px 0px 20px;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--sine);
+}
+
+.project .projectgrids .card:hover .imgfuture button {
+    background: var(--dark-blue-color);
+    transition: var(--sine);
+}
+
+.project .projectgrids .card:hover .imgfuture button i {
+    color: var(--action1-color);
+    transform: rotate(0deg);
+    transition: var(--sine);
+}
+
+.project .projectgrids .card .projectinfo {
+    padding-block-start: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project .projectgrids .card .projectinfo h2.title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.project .projectgrids .card .projectinfo p.discription {
+    font-size: 0.80rem;
+    line-height: 18px;
+    color: var(--dark-gray-color);
+}
+
+.project .projectgrids .card .projectinfo .projtags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.project .projectgrids .card .projectinfo .projtags .projtag {
+    border: 1px solid var(--dark-gray2-color);
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: var(--sine);
+}
+
+.project .projectgrids .card .projectinfo .projtags .projtag:hover {
+    border: 1px solid transparent;
+    background: var(--dark-color);
+    color: var(--bold-color);
+    transition: var(--sine);
 }
