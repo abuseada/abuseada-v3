@@ -1582,3 +1582,73 @@ i {
     transform: rotateX(180deg);
     transition: var(--glide);
 }
+
+.testimonial .container .testpagenation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testimonial .container .testpagenation .boult {
+    width: 40px;
+    height: 5px;
+    border-radius: 50px;
+    background: var(--light-gray-color);
+}
+
+.testimonial .container .testpagenation .boult.active {
+    background: var(--secondary-color);
+}
+
+/* ===================================== */
+
+/* FAQ Section */
+
+.faq {
+    padding-block: 100px;
+}
+
+.faq .faqtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq .faqtitle .faqhead h4 {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--dark-gray-color);
+    left: 50%;
+    margin-bottom: 10px;
+}
+
+.faq .faqtitle .faqhead h4::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: -50%;
+    background: var(--primary-color);
+    height: 2px;
+    width: 30px;
+}
+
+.faq .faqtitle .faqhead2 h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.faq .faqtitle .faqhead2 h2 span {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--primary-color);
+}
