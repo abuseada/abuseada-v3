@@ -21,13 +21,15 @@ servCard.forEach(e => {
     });
 });
 
+// ==============================================================================================
+
 const faqCard = document.querySelectorAll('.accordion');
 
 faqCard.forEach(e => {
-    const header = e.querySelector('.faqhead');
-    const body = e.querySelector('.faqbody');
+    const faqheader = e.querySelector('.faqhead');
+    const faqbody = e.querySelector('.faqbody');
 
-    header.addEventListener('click', j => {
+    faqheader.addEventListener('click', j => {
         const isOpen = e.classList.contains('active');
 
         // collapse all
@@ -39,7 +41,10 @@ faqCard.forEach(e => {
         // ecpand clicked
         if(!isOpen) {
             e.classList.add('active');
-            body.style.maxHeight = ContentVisibilityAutoStateChangeEvent.scrollHeight + "px";
+            faqbody.style.maxHeight = ContentVisibilityAutoStateChangeEvent.scrollHeight + "px";
         }
     });
 });
+
+// ==============================================================================================
+
