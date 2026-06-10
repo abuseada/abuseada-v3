@@ -359,18 +359,40 @@ i {
     gap: 5px;
     color: var(--tangy-color);
     line-height: 0;
+    transition: var(--sine);
 }
 
 .hero .iamHero .myImage .myctabtns .goPort span {
     background: var(--secondary-color);
     padding: 5px;
     border-radius: 50%;
+    transition: var(--sine);
     font-size: 1rem;
 }
 
 .hero .iamHero .myImage .myctabtns .goOrder {
     color: var(--ship-color);
     border: 1px solid var(--ship-color);
+    transition: var(--sine);
+}
+
+.hero .iamHero .myImage .myctabtns .goPort:hover {
+    background: var(--action2-color);
+    color: var(--black-color);
+    transition: var(--sine);
+}
+
+.hero .iamHero .myImage .myctabtns .goPort:hover span {
+    color: var(--dark-color);
+    background: var(--bold-color);
+    transition: var(--sine);
+}
+
+.hero .iamHero .myImage .myctabtns .goOrder:hover {
+    color: var(--ship-color);
+    background: var(--action1-color);
+    border: 1px solid transparent;
+    transition: var(--sine);
 }
 
 .hero .iamHero .myImage .myImg {
@@ -1478,16 +1500,58 @@ i {
 }
 
 .testimonial .testimonialgrid .testcard .testhead {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30% 65% 15%;
     align-items: center;
     justify-content: center;
+    /* gap: 15px; */
+    padding: 20px;
+    justify-items: start;
+    width: 100%;
 }
 
 .testimonial .testimonialgrid .testcard .testhead .clientimg {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 135px;
+    max-height: 135px;
     border-radius: 50%;
     border: 5px solid var(--gray-color);
     overflow: hidden;
+    margin: 0 auto;
 }
+
+.testimonial .testimonialgrid .testcard .testhead .clieninfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonial .testimonialgrid .testcard .testhead .clieninfo .group h2 {
+    font-size: 1.45rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.testimonial .testimonialgrid .testcard .testhead .clieninfo .group p {
+    font-size: 0.85rem;
+}
+
+.testimonial .testimonialgrid .testcard .testhead .clieninfo .stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial .testimonialgrid .testcard .testhead .clieninfo .stars .icons {
+    color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 0;
+}
+
+.testimonial .testimonialgrid .testcard .testhead .quateicon {
+    transform: rotate(180deg);
+    margin: 0 auto;
+}
+
