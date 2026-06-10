@@ -1431,6 +1431,15 @@ i {
 .testimonial {
     padding-block: 100px;
     background-color: var(--bold-color);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.testimonial .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .testimonial .testitle {
@@ -1488,11 +1497,10 @@ i {
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 25px 50px -12px;
     padding: 35px;
-    height: 280px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
+    transition: var(--glide);
 }
 
 .testimonial .testimonialgrid .testcard .testhead i {
@@ -1502,11 +1510,10 @@ i {
 .testimonial .testimonialgrid .testcard .testhead {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 30% 65% 15%;
+    grid-auto-columns: 27% 65% 15%;
     align-items: center;
     justify-content: center;
-    /* gap: 15px; */
-    padding: 20px;
+    padding: 0 20px 20px;
     justify-items: start;
     width: 100%;
 }
@@ -1553,5 +1560,25 @@ i {
 .testimonial .testimonialgrid .testcard .testhead .quateicon {
     transform: rotate(180deg);
     margin: 0 auto;
+    color: var(--secondary-color);
+    background: var(--gray-color);
+    border: 1px solid var(--light-gray-color);
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 26px;
+    line-height: 0;
+    transition: var(--glide);
 }
 
+.testimonial .testimonialgrid .testpragraph {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--dark-gray-color);
+    transition: var(--glide);
+}
+
+.testimonial .testimonialgrid .testcard:hover .testhead .quateicon {
+    transform: rotateX(180deg);
+    transition: var(--glide);
+}
