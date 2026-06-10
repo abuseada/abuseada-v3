@@ -1519,8 +1519,8 @@ i {
 }
 
 .testimonial .testimonialgrid .testcard .testhead .clientimg {
-    max-width: 135px;
-    max-height: 135px;
+    max-width: 125px;
+    max-height: 125px;
     border-radius: 50%;
     border: 5px solid var(--gray-color);
     overflow: hidden;
@@ -1572,7 +1572,7 @@ i {
 
 .testimonial .testimonialgrid .testpragraph {
     margin-top: 15px;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     font-weight: 500;
     color: var(--dark-gray-color);
     transition: var(--glide);
