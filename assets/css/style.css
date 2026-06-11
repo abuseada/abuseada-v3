@@ -1909,7 +1909,7 @@ i {
     transition: var(--sine);
 }
 
-.blog .blogtitle .blogtbtn button a .icon i {
+.blog .blogtitle .blogbtn button a .icon i {
     display: flex;
     align-items: center;
     justify-content: center;
