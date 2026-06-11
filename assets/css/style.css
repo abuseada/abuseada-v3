@@ -2145,3 +2145,102 @@ i {
     margin-top: 10px;
     font-family: inherit;
 }
+
+.contact .row form button {
+    background: var(--primary-color);
+    padding: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--bold-color);
+    border-radius: 10px;
+    transition: var(--sine);
+}
+
+.contact .row form button:hover {
+    background: var(--dark-blue-color);
+    transition: var(--sine);
+}
+
+.contact .row .contactcard {
+    background: var(--dark-color);
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+}
+
+.contact .row .contactcard .cardpart.contactinfo {
+    padding: 35px;
+}
+
+.contact .row .contactcard .cardpart.contactinfo h2 {
+    color: var(--tangy-color);
+    font-size: 26px;
+    padding-block: 25px;
+    text-transform: uppercase;
+}
+
+.contact .row .contactcard .cardpart.contactinfo ul li {
+    padding: 10px;
+}
+
+.contact .row .contactcard .cardpart.contactinfo ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: var(--bold-color);
+}
+
+.contact .row .contactcard .cardpart.contactinfo ul li a p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact .row .contactcard .cardpart.contactinfo ul li a i {
+    font-size: 28px;
+    line-height: 0;
+    color: var(--secondary-color);
+}
+
+.contact .row .contactcard .cardpart.socialmedia {
+    background: var(--primary-color);
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.contact .row .contactcard .cardpart.socialmedia h2 {
+    color: var(--tangy-color);
+    font-size: 26px;
+    padding-block: 15px;
+    text-transform: uppercase;
+}
+
+.contact .row .contactcard .cardpart.socialmedia ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .row .contactcard .cardpart.socialmedia ul li {
+    padding: 10px;
+    font-size: 32px;
+}
+
+.contact .row .contactcard .cardpart.socialmedia ul li a {
+    color: var(--bold-color);
+    transition: var(--sine);
+}
+
+.contact .row .contactcard .cardpart.socialmedia ul li a:hover {
+    color: var(--secondary-color);
+    transition: var(--sine);
+}
+
+.contact .row .contactcard .cardpart.socialmedia ul li a i {
+    line-height: 0;
+}
