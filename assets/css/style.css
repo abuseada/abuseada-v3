@@ -2129,7 +2129,7 @@ i {
 }
 
 .contact .row form .inputgroup label i {
-    color: var(--dark-gray-color);
+    color: red;
     line-height: 0;
     font-size: 6px;
 }
