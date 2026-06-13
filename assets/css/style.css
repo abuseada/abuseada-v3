@@ -2244,3 +2244,253 @@ i {
 .contact .row .contactcard .cardpart.socialmedia ul li a i {
     line-height: 0;
 }
+
+/* Start Footer Style */
+
+footer {
+    padding-block-start: 25px;
+}
+
+footer .ctafooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 35px;
+    border-bottom: 1px solid var(--dark-gray2-color);
+}
+
+footer .ctafooter h1 {
+    font-size: 1.7rem;
+    color: var(--dark-gray-color);
+}
+
+footer .ctafooter h1 span {
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 700;
+}
+footer .ctafooter button a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 16px;
+    background: var(--black2-color);
+    padding: 5px;
+    border-radius: 50px;
+    color: var(--bold-color);
+}
+
+footer .ctafooter button a p {
+    background: var(--secondary-color);
+    border-radius: 50px;
+    padding: 15px;
+    font-weight: 700;
+    transition: var(--sine);
+}
+
+footer .ctafooter button:hover a p {
+    background: var(--action2-color);
+    color: var(--black-color);
+    transition: var(--sine);
+}
+
+footer .ctafooter button a .icon {
+    padding: 15px;
+    color: var(--dark-color);
+    border-radius: 50px;
+    font-size: 18px;
+    background: var(--bold-color);
+    transition: var(--sine);
+}
+
+footer .ctafooter button:hover a .icon {
+    color: var(--action1-color);
+    transition: var(--sine);
+}
+
+footer .ctafooter button a .icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+footer .row {
+    margin-top: 35px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40% 16% 16% 28%;
+}
+
+footer .row .footercol:not(:last-child) {
+    padding-right: 2.5em;
+}
+
+footer .row .logo {
+    width: max-content;
+    height: max-content;
+    padding-block-end: 1.5em;
+}
+
+footer .row .logo img {
+    max-width: 70px;
+    width: 100%;
+}
+
+footer .row .logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .row .logo a h1 {
+    font-size: 1rem;
+    line-height: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--dark-blue-color);
+    width: 75px;
+}
+
+footer .row .logo a h1 span {
+    color: var(--secondary-color);
+}
+
+footer .row .footercol p.aboutme {
+    width: 75%;
+    line-height: 1.3;
+    font-size: 0.95em;
+    padding-block-end: 1.5em;
+}
+
+footer .row .footercol .social_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+footer .row .footercol .social_link a {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--gray-color);
+    border-radius: 50px;
+    background: var(--secondary-color);
+    transition: var(--transition);
+}
+
+footer .row .footercol .social_link a:hover {
+    background-color: var(--primary-color);
+    color: var(--bold-color);
+    transition: var(--transition);
+}
+
+footer .row .footercol h4 {
+    font-size: 1.2em;
+    padding-block-end: 1.5em;
+    color: var(--primary-color);
+}
+
+footer .row .footercol .links .link {
+    padding: 0.5em;
+    width: fit-content;
+}
+
+footer .row .footercol .links .link a {
+    font-size: 1.1em;
+    color: var(--dark-gray-color);
+    transition: var(--sine);
+}
+
+footer .row .footercol .links .link a:hover {
+    color: var(--primary-color);
+}
+
+footer .row .footercol .contactlinks .contactlink {
+    padding: 0.5em;
+    width: fit-content;
+}
+
+footer .row .footercol .contactlinks .contactlink a {
+    font-size: 1.1em;
+    color: var(--dark-gray-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .row .footercol .contactlinks .contactlink a i {
+    color: var(--dark-blue-color);
+}
+
+footer .row .footercol form {
+    display: flex;
+}
+
+footer .row .footercol form input {
+    background: var(--bold-color);
+    border: 1px solid var(--dark-gray2-color);
+    border-radius: 10px 0 0 10px;
+    padding: 15px;
+    width: 85%;
+    font-family: inherit;
+}
+
+footer .row .footercol form button i {
+    line-height: 0;
+}
+
+footer .row .footercol form button {
+    background: var(--dark-blue-color);
+    color: var(--bold-color);
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    width: 15%;
+    font-family: inherit;
+    transition: var(--sine);
+}
+
+footer .row .footercol form button:hover {
+    background-color: var(--secondary-color);
+}
+
+footer .footerinfo {
+    background: var(--black-color);
+    color: var(--bold-color);
+    padding-block: 20px;
+    margin-top: 35px;
+}
+
+footer .footerinfo .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerinfo .infocol p {
+    font-size: 1.1em;
+}
+
+footer .footerinfo .infocol p > span {
+    color: var(--secondary-color);
+}
+
+footer .footerinfo .infocol a {
+    color: var(--bold-color);
+}
+
+footer .footerinfo .infocol span {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* End Footer Style */
