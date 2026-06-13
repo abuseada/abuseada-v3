@@ -2642,7 +2642,7 @@ footer .footerinfo .infocol span {
 
 /* 
     ====================
-    Start Header Responsive
+    Header Responsive
     ====================
 */
 
@@ -2663,5 +2663,55 @@ footer .footerinfo .infocol span {
     header.header nav .menubtn {
         visibility: visible;
         display: block;
+    }
+}
+
+/* 
+    ====================
+    Footer Responsive
+    ====================
+*/
+
+
+
+/* 
+    ====================
+    Footer Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    footer .ctafooter {
+        display: none;
+    }
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .row .footercol:not(:last-child) {
+        padding-bottom: 2.5em;
+        padding-right: 0em;
+    }
+
+    
+    footer .row .footercol h4 {
+        padding-block-end: 0.5em;
+    }
+
+    footer .row .footercol p.aboutme {
+        width: 100%;
+    }
+
+    footer .footerinfo {
+        padding-block: 30px;
+    }
+
+    footer .footerinfo .container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
     }
 }
