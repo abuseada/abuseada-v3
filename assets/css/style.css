@@ -1251,6 +1251,7 @@ i {
     font-weight: 700;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
@@ -2226,6 +2227,7 @@ i {
     text-transform: uppercase;
     font-weight: 700;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
@@ -2668,11 +2670,322 @@ footer .footerinfo .infocol span {
 
 /* 
     ====================
+    Hero Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .hero {
+        height: fit-content;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .iamHero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero .topHero h4 {
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translate(-140%, 0%);
+        color: var(--ship-color);
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .hero .iamHero .myImage .myImg {
+        display: none;
+    }
+
+    .hero .iamHero .myImage .myctabtns {
+        position: relative;
+        background-color: var(--black-color);
+        bottom: 0;
+    }
+
+    .hero .iamHero .myImage .myctabtns .goOrder {
+        color: var(--tangy-color);
+        border: 1px solid var(--tangy-color);
+        transition: var(--sine);
+    }
+
+    .hero .iamHero .myAbout {
+        display: none;
+    }
+
+    .hero .iamHero .social_tags {
+        display: none;
+    }
+}
+
+/* 
+    ====================
+    Bar Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .sliderbar {
+        display: none;
+    }
+}
+
+/* 
+    ====================
+    Services Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .services .servicesheader .servicehead h4 {
+        text-align: center;
+        left: 3%;
+    }
+
+    .services .servicesheader .servicehead h4::before {
+        bottom: 50%;
+        left: 26%;
+        right: 0;
+    }
+
+    .services .servicesheader .servicehead2 {
+        flex-direction: column;
+    }
+
+    .services .servicesheader .servicehead2 p {
+        width: 75%;
+        text-align: center;
+    }
+
+    .accordion-item .servicehead .col h1 {
+        font-size: 25px;
+    }
+
+    .accordion-item .servicehead .col.num {
+        width: 50px;
+    }
+
+    .accordion-item .servicebody .servtags {
+        width: 100%;
+    }
+
+    .accordion-item .servicebody .discrip {
+        width: 100%;
+    }
+
+    .accordion-item .servicebody .servimg {
+        max-width: 100%;
+        height: 300px;
+    }
+}
+
+/* 
+    ====================
+    About Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+
+    .about .row .col.info {
+        width: 100%;
+    }
+
+    .about .row .col .aboutitle h4 {
+        font-size: 18px;
+        left: 9%;
+
+    }
+
+    .about .row .col .aboutitle h4::before {
+        left: -9%;
+    }
+
+    .about .row .col.photo {
+        display: none;
+    }
+}
+
+/* 
+    ====================
+    Program Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .myprogram .programtitle .proghead2 h2 {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .myprogram .row {
+        display: grid;
+        width: 60%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 
+    ====================
+    Project Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .project .projectitle {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project .projectitle .projhead h4 {
+        left: 5%;
+    }
+
+    .project .projectitle .projhead h4::before {
+        transform: translate(-50%, -50%);
+        left: 33%;
+    }
+
+    .project .projectitle .projectbtn button a {
+        transform: scale(0.8);
+    }
+
+    .project .projectgrids {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* 
+    ====================
     Footer Responsive
     ====================
 */
 
+@media (max-width: 996px) {
+    .testimonial .testimonialgrid {
+        grid-template-columns: 1fr;
+    }
+}
 
+/* 
+    ====================
+    FAQs Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .faq {
+        padding-block: 50px;
+    }
+
+    .faq .row {
+        grid-auto-columns: 100%;
+        margin-top: 40px;
+    }
+
+    .faq .row .faqcol.acc {
+        width: 100%;
+    }
+
+    .faq .row .faqcol.cards {
+        display: none;
+    }
+}
+
+/* 
+    ====================
+    Blog Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .blog .blogtitle {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .blog .blogtitle .group {
+        margin-bottom: 10px;
+    }
+
+    .blog .blogtitle .bloghead h4 {
+        left: 2%;
+    }
+
+    .blog .blogtitle .bloghead h4::before {
+        left: 25%;
+    }
+
+    .blog .blogtitle .blogbtn button {
+        transform: scale(0.85);
+    }
+
+    .blog .bloggrid {
+        grid-auto-flow: row;
+        grid-auto-columns: 100%;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .blog .bloggrid .blogcard .blogfuture_img {
+        height: 350px;
+    }
+
+    .blog .bloggrid .blogcard .blogfuture_img .iconhover {
+        height: 350px;
+    }
+}
+
+/* 
+    ====================
+    Contact Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .contact .contacttitle .contacthead h4 {
+        left: 0%;
+    }
+
+    .contact .contacttitle .contacthead h4::before {
+        left: -20%;
+    }
+
+    .contact .contacttitle {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .contacttitle .contacthead2 h2 {
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .row {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-columns: 100%;
+    }
+
+    .contact .row form {
+        width: 100%;
+    }
+}
 
 /* 
     ====================
