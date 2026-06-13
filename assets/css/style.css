@@ -242,6 +242,21 @@ header nav button a {
     text-transform: uppercase;
 }
 
+header nav .menubtn {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-image: linear-gradient(to right top, #0d1035, #162054, #1e3275, #234499, #2158be, #1470d5, #0488eb, #00a1ff, #00beff, #00d5ef, #00e6bf, #5cf285);
+    color: var(--bold-color);
+
+    /* visibility: hidden;
+    display: none; */
+}
+
+header nav .menubtn > #close {
+    transform: rotate(45deg);
+}
+
 /* ===================================== */
 
 /* Hero Section */
@@ -2494,3 +2509,12 @@ footer .footerinfo .infocol span {
 }
 
 /* End Footer Style */
+
+/* Resposive Code */
+
+/* 
+    ====================
+    Start Header Responsive
+    ====================
+*/
+
