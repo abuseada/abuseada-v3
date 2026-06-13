@@ -48,3 +48,19 @@ faqCard.forEach(e => {
 
 // ==============================================================================================
 
+const btnGroup = document.querySelector('.menubtn');
+const open = document.querySelector('#open');
+const close = document.querySelector('#close');
+const mobileMenu = document.querySelector('.mobilenav');
+
+open.addEventListener ('click', () => {
+    btnGroup.classList.add('active');
+    btnGroup.classList.add('active');
+    mobileMenu.classList.add('active');
+})
+
+close.addEventListener ('click', () => {
+    btnGroup.classList.remove('active');
+    btnGroup.classList.remove('active');
+    mobileMenu.classList.remove('active');
+})

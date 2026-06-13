@@ -143,7 +143,7 @@ button {
 
 /* Header */
 
-header {
+header.header {
     position: fixed;
     right: 0;
     left: 0;
@@ -156,31 +156,31 @@ header {
     padding: 15px 25px;
 }
 
-header nav {
+header.header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-header nav .logo {
+header.header nav .logo {
     width: max-content;
     height: max-content;
 }
 
-header nav .logo img {
+header.header nav .logo img {
     max-width: 70px;
     width: 100%;
 }
 
-header nav .logo a {
+header.header nav .logo a {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-header nav .logo a h1 {
+header.header nav .logo a h1 {
     font-size: 1rem;
     line-height: 13px;
     font-weight: 900;
@@ -189,18 +189,18 @@ header nav .logo a h1 {
     width: 75px;
 }
 
-header nav .logo a h1 span {
+header.header nav .logo a h1 span {
     color: var(--secondary-color);
 }
 
-header nav .links {
+header.header nav .links {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
 
-header nav .links .link a {
+header.header nav .links .link a {
     position: relative;
     color: var(--dark-blue-color);
     font-weight: 700;
@@ -208,7 +208,7 @@ header nav .links .link a {
     padding: 10px 15px;
 }
 
-header nav .links .link a::after {
+header.header nav .links .link a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -219,11 +219,11 @@ header nav .links .link a::after {
     transition: var(--transition);
 }
 
-header nav .links .link.active a {
+header.header nav .links .link.active a {
     color: var(--primary-color);
 }
 
-header nav .links a:hover::after {
+header.header nav .links a:hover::after {
     width: 100%;
 }
 
@@ -232,7 +232,7 @@ header nav .links .link.active a::after {
     width: 100%;
 }
 
-header nav button a {
+header.header nav .contact_btn a {
     background-image: linear-gradient(to right top, #0d1035, #162054, #1e3275, #234499, #2158be, #1470d5, #0488eb, #00a1ff, #00beff, #00d5ef, #00e6bf, #5cf285);
     padding: 15px 20px;
     color: var(--tangy-color);
@@ -242,22 +242,17 @@ header nav button a {
     text-transform: uppercase;
 }
 
-header nav .menubtn {
+header.header nav .menubtn {
     visibility: hidden;
     display: none;
 }
 
-header nav .menubtn.visible {
-    visibility: visible;
-    display: block;
-}
-
-header nav .menubtn button i {
+header.header nav .menubtn button i {
     line-height: 0;
     color: var(--bold-color);
 }
 
-header nav .menubtn button {
+header.header nav .menubtn button {
     padding: 1em;
     list-style: 0;
     font-size: 1em;
@@ -270,20 +265,20 @@ header nav .menubtn button {
     justify-content: center;
 }
 
-header nav .menubtn #open {
+header.header nav .menubtn #open {
     visibility: visible;
     opacity: 1;
     display: flex;
     transition: var(--glide);
 }
 
-header nav .menubtn.active #open {
+header.header nav .menubtn.active #open {
     visibility: hidden;
     opacity: 0;
     display: none;
     transition: var(--glide);
 }
-header nav .menubtn #close {
+header.header nav .menubtn #close {
     transform: rotate(45deg);
     visibility: hidden;
     opacity: 0;
@@ -291,7 +286,7 @@ header nav .menubtn #close {
     transition: var(--glide);
 }
 
-header nav .menubtn.active #close {
+header.header nav .menubtn.active #close {
     transition: var(--glide);
     transform: rotate(0deg);
     visibility: visible;
@@ -299,24 +294,44 @@ header nav .menubtn.active #close {
     display: flex;
 }
 
-header.container {
-    position: relative;
+header.header2 {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 0 auto;
 }
 
-header .mobilenav {
+header.header2 .mobilenav {
     position: absolute;
-    top: 70px;
+    top: -30px;
     width: 100%;
-    height: max-content;
-    padding: 1.5em;
+    height: 0;
+    border-radius: 25px;
+    padding: 1.5em 0em;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 35px;
     background: var(--light-gray-color);
+    transition: var(--glide);
 }
 
-header .mobilenav .moblinks {
+header.header2 .mobilenav.active {
+    top: 30px;
+    height: 315px;
+    visibility: visible;
+    opacity: 1;
+    padding: 1.5em 1.5em;
+    transition: var(--glide);
+}
+
+header.header2 .mobilenav .moblinks {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,7 +339,7 @@ header .mobilenav .moblinks {
     gap: 25px;
 }
 
-header .mobilenav .moblinks .link a {
+header.header2 .mobilenav .moblinks .link a {
     position: relative;
     color: var(--dark-blue-color);
     font-weight: 700;
@@ -332,7 +347,7 @@ header .mobilenav .moblinks .link a {
     padding: 10px 15px;
 }
 
-header .mobilenav .moblinks .link a::after {
+header.header2 .mobilenav .moblinks .link a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -343,28 +358,31 @@ header .mobilenav .moblinks .link a::after {
     transition: var(--transition);
 }
 
-header .mobilenav .moblinks .link.active a {
+header.header2 .mobilenav .moblinks .link.active a {
     color: var(--primary-color);
 }
 
-header .mobilenav .moblinks a:hover::after {
+header.header2 .mobilenav .moblinks a:hover::after {
     width: 100%;
 }
 
-header .mobilenav .moblinks .link.active a::after {
+header.header2 .mobilenav .moblinks .link.active a::after {
     background: var(--primary-color);
     width: 100%;
 }
 
-header .mobilenav button a {
+header.header2 .mobilenav .mob_btn {
     background-image: linear-gradient(to right top, #0d1035, #162054, #1e3275, #234499, #2158be, #1470d5, #0488eb, #00a1ff, #00beff, #00d5ef, #00e6bf, #5cf285);
     padding: 15px 20px;
-    color: var(--tangy-color);
     font-weight: 600;
     font-size: 0.9rem;
     border-radius: 25px;
-    width: 100%;
     text-transform: uppercase;
+    width: fit-content;
+}
+
+header.header2 .mobilenav .mob_btn a {
+    color: var(--tangy-color);
 }
 
 /* ===================================== */
@@ -2628,3 +2646,22 @@ footer .footerinfo .infocol span {
     ====================
 */
 
+@media (max-width: 996px) {
+    header.header {
+        width: 95%;
+    }
+
+    header.header2 {
+        width: 95%;
+    }
+
+    header.header nav.navbar ul,
+    header.header nav.navbar .contact_btn {
+        display: none;
+    }
+
+    header.header nav .menubtn {
+        visibility: visible;
+        display: block;
+    }
+}
