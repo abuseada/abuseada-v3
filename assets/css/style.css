@@ -2670,6 +2670,119 @@ footer .footerinfo .infocol span {
 
 /* 
     ====================
+    Padding
+    ====================
+*/
+
+@media (max-width: 996px) {
+    section {
+        padding-block: 25px;
+    }
+}
+
+/* 
+    =======================
+    H4::before Remove Style
+    =======================
+*/
+
+@media (max-width: 996px) {
+    .hero .topHero h4 {
+        left: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    .hero .topHero h4::before {
+        display: none;
+        top: 0px;
+        left: 0px;
+    }
+
+    .services .servicesheader .servicehead h4 {
+        left: 0px;
+    }
+
+    .services .servicesheader .servicehead h4::before {
+        display: none;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .myprogram .programtitle .proghead h4 {
+        left: 0%;
+    }
+    .myprogram .programtitle .proghead h4::before {
+        display: none;
+        bottom: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        left: 0%;
+    }
+
+    .project .projectitle .projhead h4 {
+        left: 0%;
+    }
+
+    .project .projectitle .projhead h4::before {
+        bottom: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        left: 0%;
+        display: none;
+    }
+
+    .testimonial .testitle .testhead h4 {
+        left: 0%;
+    }
+
+    .testimonial .testitle .testhead h4::before {
+        display: none;
+        bottom: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        left: 0%;
+    }
+
+    .faq .faqtitle .faqhead h4 {
+        left: 0%;
+    }
+
+    .faq .faqtitle .faqhead h4::before {
+        display: none;
+        bottom: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        left: 0%;
+    }
+
+    .blog .blogtitle .bloghead h4 {
+        left: 0%;
+    }
+
+    .blog .blogtitle .bloghead h4::before {
+        display: none;
+        bottom: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        left: 0%;
+    }
+
+    .contact .contacttitle .contacthead h4 {
+        left: 0%;
+    }
+
+    .contact .contacttitle .contacthead h4::before {
+        display: none;
+        bottom: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        left: 0%;
+    }
+}
+
+/* 
+    ====================
     Hero Responsive
     ====================
 */
@@ -2689,9 +2802,6 @@ footer .footerinfo .infocol span {
 
     .hero .topHero h4 {
         position: relative;
-        left: 50%;
-        right: 50%;
-        transform: translate(-140%, 0%);
         color: var(--ship-color);
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -2742,17 +2852,9 @@ footer .footerinfo .infocol span {
 */
 
 @media (max-width: 996px) {
-    .services .servicesheader .servicehead h4 {
-        text-align: center;
-        left: 3%;
+    .services .servicesheader {
+        align-items: center;
     }
-
-    .services .servicesheader .servicehead h4::before {
-        bottom: 50%;
-        left: 26%;
-        right: 0;
-    }
-
     .services .servicesheader .servicehead2 {
         flex-direction: column;
     }
@@ -2792,18 +2894,36 @@ footer .footerinfo .infocol span {
 
 @media (max-width: 996px) {
 
+    .about .row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
     .about .row .col.info {
         width: 100%;
     }
 
     .about .row .col .aboutitle h4 {
         font-size: 18px;
-        left: 9%;
+        left: 0%;
+    }
 
+    .about .row .col .aboutcta {
+        flex-direction: column;
+    }
+
+    .about .row .col .conterabout {
+        justify-content: space-between;
+    }
+
+    .about .row .col .conterabout .contercol {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .about .row .col .aboutitle h4::before {
-        left: -9%;
+        display: none;
     }
 
     .about .row .col.photo {
@@ -2847,13 +2967,8 @@ footer .footerinfo .infocol span {
         justify-content: center;
     }
 
-    .project .projectitle .projhead h4 {
-        left: 5%;
-    }
-
-    .project .projectitle .projhead h4::before {
-        transform: translate(-50%, -50%);
-        left: 33%;
+    .project .projectitle .projhead2 h2 {
+        flex-direction: column;
     }
 
     .project .projectitle .projectbtn button a {
@@ -2868,13 +2983,17 @@ footer .footerinfo .infocol span {
 
 /* 
     ====================
-    Footer Responsive
+    Testimonial Responsive
     ====================
 */
 
 @media (max-width: 996px) {
     .testimonial .testimonialgrid {
         grid-template-columns: 1fr;
+    }
+
+    .testimonial .testitle .testhead2 h2 {
+        flex-direction: column;
     }
 }
 
@@ -2919,14 +3038,6 @@ footer .footerinfo .infocol span {
 
     .blog .blogtitle .group {
         margin-bottom: 10px;
-    }
-
-    .blog .blogtitle .bloghead h4 {
-        left: 2%;
-    }
-
-    .blog .blogtitle .bloghead h4::before {
-        left: 25%;
     }
 
     .blog .blogtitle .blogbtn button {
@@ -2997,6 +3108,7 @@ footer .footerinfo .infocol span {
     footer .ctafooter {
         display: none;
     }
+    
     footer .row {
         display: flex;
         flex-direction: column;
