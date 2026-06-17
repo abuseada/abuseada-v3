@@ -64,3 +64,18 @@ close.addEventListener ('click', () => {
     btnGroup.classList.remove('active');
     mobileMenu.classList.remove('active');
 })
+
+// ==============================================================================================
+// scrollreveal
+
+ScrollReveal().reveal(
+    'section',
+    { 
+        delay: 200, 
+        distance: '50px',
+        interval: 600,
+        reset: true,
+        mobile: false,
+    }
+
+);
