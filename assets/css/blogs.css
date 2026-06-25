@@ -68,7 +68,7 @@ textarea {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -494,7 +494,7 @@ header.header2 .mobilenav .mob_btn a {
 }
 
 .blogs .bloggrid {
-    width: 73%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -524,7 +524,7 @@ header.header2 .mobilenav .mob_btn a {
 
 .blogs .bloggrid .blogcard .blogfuture_img {
     position: relative;
-    height: 450px;
+    height: fit-content;
     overflow: hidden;
     border-radius: 25px;
     border: 1px solid var(--dark-blue-color);
@@ -659,7 +659,7 @@ header.header2 .mobilenav .mob_btn a {
 }
 
 .blogs .actionside {
-    width: 27%;
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
