@@ -792,8 +792,7 @@ header.header2 .mobilenav .mob_btn a {
 
 .faq .row {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 75% 25%;
+    grid-template-columns: 3fr 1fr;
     gap: 25px;
     margin-top: 80px;
 }
@@ -802,13 +801,6 @@ header.header2 .mobilenav .mob_btn a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.faq .faqcol.acc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
 }
 
 .faq .row .faqcol .accordion {
@@ -1003,14 +995,14 @@ header.header2 .mobilenav .mob_btn a {
 
 .contact .row {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 65% 35%;
+    grid-template-columns: 2fr 1fr;
+    justify-items: end;
     gap: 20px;
     margin-top: 50px;
 }
 
 .contact .row form {
-    width: 70%;
+    width: 100%;
 }
 
 .contact .row form .formgroup {
@@ -1089,7 +1081,7 @@ header.header2 .mobilenav .mob_btn a {
 }
 
 .contact .row .contactcard .cardpart.contactinfo ul li {
-    padding: 10px;
+    padding-block: 10px;
 }
 
 .contact .row .contactcard .cardpart.contactinfo ul li a {
@@ -1131,17 +1123,22 @@ header.header2 .mobilenav .mob_btn a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 .contact .row .contactcard .cardpart.socialmedia ul li {
-    padding: 10px;
-    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 45px;
 }
 
 .contact .row .contactcard .cardpart.socialmedia ul li a {
+    font-size: 24px;
     color: var(--bold-color);
     transition: var(--sine);
+    line-height: 0%;
 }
 
 .contact .row .contactcard .cardpart.socialmedia ul li a:hover {
