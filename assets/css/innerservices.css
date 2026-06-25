@@ -68,7 +68,7 @@ textarea {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -750,14 +750,14 @@ header.header2 .mobilenav .mob_btn a {
 
 .contact .row {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 65% 35%;
+    grid-template-columns: 2fr 1fr;
+    justify-items: end;
     gap: 20px;
     margin-top: 50px;
 }
 
 .contact .row form {
-    width: 70%;
+    width: 100%;
 }
 
 .contact .row form .formgroup {
@@ -836,7 +836,7 @@ header.header2 .mobilenav .mob_btn a {
 }
 
 .contact .row .contactcard .cardpart.contactinfo ul li {
-    padding: 10px;
+    padding-block: 10px;
 }
 
 .contact .row .contactcard .cardpart.contactinfo ul li a {
@@ -878,17 +878,22 @@ header.header2 .mobilenav .mob_btn a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 .contact .row .contactcard .cardpart.socialmedia ul li {
-    padding: 10px;
-    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 45px;
 }
 
 .contact .row .contactcard .cardpart.socialmedia ul li a {
+    font-size: 24px;
     color: var(--bold-color);
     transition: var(--sine);
+    line-height: 0%;
 }
 
 .contact .row .contactcard .cardpart.socialmedia ul li a:hover {
