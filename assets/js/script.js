@@ -68,14 +68,14 @@ close.addEventListener ('click', () => {
 // ==============================================================================================
 // scrollreveal
 
-// ScrollReveal().reveal(
-//     'section',
-//     { 
-//         delay: 200, 
-//         distance: '50px',
-//         interval: 600,
-//         reset: true,
-//         mobile: false,
-//     }
+ScrollReveal().reveal(
+     'section',
+     { 
+         delay: 200, 
+         distance: '50px',
+         interval: 600,
+         reset: true,
+         mobile: false,
+     }
 
-// );
+ );
