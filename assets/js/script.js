@@ -74,7 +74,7 @@ ScrollReveal().reveal(
          delay: 200, 
          distance: '50px',
          interval: 600,
-         reset: true,
+         reset: false,
          mobile: false,
      }
 
