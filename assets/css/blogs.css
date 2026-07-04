@@ -472,9 +472,6 @@ header.header2 .mobilenav .mob_btn a {
 }
 
 @keyframes scrolling {
-    from {
-        transform: translateX(0);
-    }
     to {
         transform: translateX(-100%);
     }

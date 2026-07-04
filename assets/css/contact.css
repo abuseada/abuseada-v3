@@ -479,221 +479,6 @@ header.header2 .mobilenav .mob_btn a {
 
 /* ===================================== */
 
-/* Service Img Section */
-
-.service {
-    padding-block-start: 50px;
-}
-
-.service .servimg {
-    overflow: hidden;
-    max-width: 1920px;
-    max-height: 700px;
-    border: 1px solid var(--dark-gray-color);
-    border-radius: 25px;
-    margin: 0 auto;
-}
-
-.service .servimg img {
-    width: 100%;
-    height: 100%;
-}
-
-/* ===================================== */
-
-/* Service Information Section */
-
-.ditails {
-    padding-block-start: 25px;
-    padding-block-end: 50px;
-}
-
-.ditails .servabout h1 {
-    font-size: 25px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.ditails .servabout h1 > span {
-    font-weight: 600;
-    font-style: italic;
-    color: var(--primary-color);
-    margin: 0 5px;
-}
-
-.ditails .servabout .detail {
-    padding-block: 15px;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ship-color);
-    text-align: justify;
-}
-
-.ditails .servinclude h3 {
-    font-size: 22px;
-}
-
-.ditails .servinclude .includeinfo {
-    padding-block: 15px;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ship-color);
-    text-align: justify;
-}
-
-.ditails .servinclude .includelist {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    padding-block: 10px;
-}
-
-.ditails .servinclude .includelist li {
-    padding: 10px 5px 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 7px;
-}
-
-.ditails .servinclude .includelist li i {
-    color: var(--secondary-color);
-    line-height: 0;
-    padding: 0;
-    font-size: 16px;
-}
-
-.ditails .servinclude .includelist li p {
-    font-size: 16px;
-    color: var(--ship-color);
-}
-
-.ditails .servinclude .imgallary {
-    padding-block: 30px;
-    display: flex;
-    gap: 15px;
-    transition: var(--sine);
-}
-
-.ditails .servinclude .imgallary .col {
-    overflow: hidden;
-    width: 700px;
-    height: 500px;
-    border: 1px solid var(--dark-gray2-color);
-    border-radius: 25px;
-    transition: var(--sine);
-}
-
-.ditails .servinclude .imgallary .col:hover {
-    transform: translateY(-15px);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
-
-.ditails .servinclude .imgallary .col img {
-    width: 100%;
-    height: 100%;
-}
-
-.ditails .servindustry h3 {
-    font-size: 22px;
-}
-
-
-.ditails .servindustry .industryinfo {
-    padding-block: 15px;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ship-color);
-    text-align: justify;
-}
-
-.ditails .servindustry .industrygrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    padding-block: 10px;
-}
-
-.ditails .servindustry .industrygrid .card {
-    padding: 25px;
-    background: var(--gray-color);
-    border: 1px solid var(--light-gray-color);
-    border-radius: 15px;
-    height: 200px;
-    transition: var(--sine);
-}
-
-.ditails .servindustry .industrygrid .card:hover {
-    transform: translateY(-10px);
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-}
-
-.ditails .servindustry .industrygrid .card .icon {
-    background: var(--tangy-color);
-    color: var(--dark-blue-color);
-    padding: 15px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ditails .servindustry .industrygrid .card .icon i {
-    line-height: 0;
-    padding: 0;
-}
-
-.ditails .servindustry .industrygrid .card h2 {
-    padding-block: 10px;
-    font-size: 18px;
-    color: var(--primary-color);
-}
-
-.ditails .servindustry .industrygrid .card p {
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ship-color);
-    text-align: justify;
-}
-
-.ditails .servbenefits h3 {
-    font-size: 22px;
-    margin-top: 15px;
-}
-
-.ditails .servbenefits .benefit {
-    padding-block: 15px;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ship-color);
-    text-align: justify;
-}
-
-.ditails .servbenefits .benefitlist li {
-    display: flex;
-    gap: 5px;
-    padding: 10px 0 10px;
-}
-
-.ditails .servbenefits .benefitlist li .benicon i {
-    line-height: 0;
-    padding: 0;
-    color: var(--secondary-color);
-}
-
-.ditails .servbenefits .benefitlist li p {
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--ship-color);
-    text-align: justify;
-}
-
-/* ===================================== */
-
 /* Contact Section */
 
 .contact {
@@ -1236,74 +1021,6 @@ footer .footerinfo .infocol span {
 
 /* 
     ====================
-    Service Img Responsive
-    ====================
-*/
-
-@media (max-width: 996px)  {
-    .service .servimg {
-        max-width: fit-content;
-        max-height: 750px;
-    }
-
-    
-    .ditails .servabout h1 {
-        font-size: 23px;
-    }
-
-    .ditails .servabout .detail {
-        text-align: start;
-    }
-
-    .ditails .servinclude .includeinfo {
-        text-align: start;
-    }
-
-    .ditails .servinclude .includelist {
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        padding-block: 10px;
-    }
-
-    .ditails .servinclude .imgallary {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .ditails .servinclude .imgallary .col {
-        width: fit-content;
-        height: 300px;
-    }
-
-    
-    .ditails .servindustry .industryinfo {
-        text-align: start;
-    }
-
-    .ditails .servindustry .industrygrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .ditails .servindustry .industrygrid .card {
-        padding: 10px;
-    }
-
-    .ditails .servindustry .industrygrid .card p {
-        text-align: start;
-    }
-
-    .ditails .servbenefits .benefit {
-        text-align: start;
-    }
-
-    .ditails .servbenefits .benefitlist li p {
-        text-align: start;
-    }
-}
-
-/* 
-    ====================
     Contact Responsive
     ====================
 */
@@ -1331,9 +1048,11 @@ footer .footerinfo .infocol span {
     }
 
     .contact .row {
-        display: grid;
-        grid-auto-flow: row;
-        grid-auto-columns: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .contact .row .contactcard {
+        width: 100%;
     }
 
     .contact .row .contactcard .cardpart.contactinfo {
@@ -1346,6 +1065,27 @@ footer .footerinfo .infocol span {
 
     .contact .row form {
         width: 100%;
+    }
+}
+
+/* 
+    ====================
+    FAQs Responsive
+    ====================
+*/
+
+@media (max-width: 996px) {
+    .faq {
+        padding-block: 50px;
+    }
+
+    .faq .row {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .faq .row .faqcol.cards {
+        gap: 15px;
     }
 }
 
